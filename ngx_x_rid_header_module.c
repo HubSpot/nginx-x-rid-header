@@ -6,7 +6,9 @@
 #if (NGX_FREEBSD)
 #error FreeBSD is not supported yet, sorry.
 #elif (NGX_LINUX)
-#include <uuid.h>      
+// CentOS 6 version of libossp is just /usr/include/uuid.h
+//#include <ossp/uuid.h>
+#include <uuid.h>
 #elif (NGX_SOLARIS)
 #error Solaris is not supported yet, sorry.
 #elif (NGX_DARWIN)
